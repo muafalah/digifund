@@ -10,6 +10,7 @@ import WhatWeDo from "@/components/WhatWeDo/WhatWeDo";
 import OurDiff from "@/components/OurDiff/OurDiff";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import WhoWeInvest from "@/components/WhoWeInvest/WhoWeInvest";
+import Testimonials from "@/components/Testimonials/Testimonials";
 
 export default function Home() {
   const controls = useAnimation();
@@ -55,6 +56,7 @@ export default function Home() {
       >
         <WhoWeInvest />
       </motion.div>
+      <Testimonials />
     </motion.div>
   );
 }
