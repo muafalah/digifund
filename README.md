@@ -3,11 +3,11 @@
 1. Clone this repository to your local machine using:
 
    ```bash
-   git clone https://github.com/Bayusetiawan45/v2.codebayu.com.git
+   git clone https://github.com/muafalah/digifund.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd v2.codebayu.com
+   cd digifund
    ```
 3. Install the dependencies:
    ```bash
