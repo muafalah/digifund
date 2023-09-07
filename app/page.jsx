@@ -9,6 +9,7 @@ import BrandingVideo from "@/components/BrandingVideo/BrandingVideo";
 import WhatWeDo from "@/components/WhatWeDo/WhatWeDo";
 import OurDiff from "@/components/OurDiff/OurDiff";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
+import WhoWeInvest from "@/components/WhoWeInvest/WhoWeInvest";
 
 export default function Home() {
   const controls = useAnimation();
@@ -37,6 +38,23 @@ export default function Home() {
         <OurDiff />
       </motion.div>
       <HowItWorks />
+      <motion.div
+        onViewportEnter={() =>
+          controls.start({
+            backgroundColor: "var(--primary-color)",
+          })
+        }
+        onViewportLeave={() =>
+          controls.start({
+            backgroundColor: "white",
+          })
+        }
+        viewport={{
+          amount: 0.4,
+        }}
+      >
+        <WhoWeInvest />
+      </motion.div>
     </motion.div>
   );
 }
