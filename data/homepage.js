@@ -76,7 +76,7 @@ export const ourDiffFeatures = [
   },
 ];
 
-export const hitFeatures = [
+export const hiwFeatures = [
   {
     icon: "/howItWorks/Frame-0.png",
     title: "Connect",

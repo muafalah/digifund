@@ -8,6 +8,7 @@ import Hero from "@/components/Hero/Hero";
 import BrandingVideo from "@/components/BrandingVideo/BrandingVideo";
 import WhatWeDo from "@/components/WhatWeDo/WhatWeDo";
 import OurDiff from "@/components/OurDiff/OurDiff";
+import HowItWorks from "@/components/HowItWorks/HowItWorks";
 
 export default function Home() {
   const controls = useAnimation();
@@ -30,11 +31,12 @@ export default function Home() {
           })
         }
         viewport={{
-          amount: 0,
+          amount: 0.4,
         }}
       >
         <OurDiff />
       </motion.div>
+      <HowItWorks />
     </motion.div>
   );
 }
