@@ -52,6 +52,11 @@
   cursor: pointer;
 }
 
+.n-menu span:hover {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
 .fund-button {
   color: var(--dark-bg);
   background-color: var(--third-color);
@@ -60,6 +65,10 @@
   text-transform: capitalize;
   border-radius: 999px;
   cursor: pointer;
+}
+
+.fund-button:hover {
+  filter: brightness(90%);
 }
 
 .nm-container {
