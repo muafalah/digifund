@@ -38,11 +38,11 @@ export const features = [
   },
   {
     icon: "/features/Frame-1.png",
-    title: "Flat fee of 6-12%",
+    title: "Flat fee of 6% to 12%",
   },
   {
     icon: "/features/Frame-2.png",
-    title: "Flexible repayments by revenue share",
+    title: "Repayments by revenue share",
   },
   {
     icon: "/features/Frame-3.png",
