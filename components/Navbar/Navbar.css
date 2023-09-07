@@ -59,6 +59,7 @@
   font-size: 1rem;
   text-transform: capitalize;
   border-radius: 999px;
+  cursor: pointer;
 }
 
 .nm-container {
@@ -100,10 +101,14 @@
     height: calc(100vh - 3.8rem);
   }
 
-  .nm-menu span {
+  .nm-menu a {
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--border-color);
+  }
+
+  .nm-menu a:last-child {
+    border-bottom: 0;
   }
 
   .m-funded-button {
@@ -116,5 +121,6 @@
     padding: 1rem 0rem;
     border-radius: 999px;
     color: var(--dark-bg);
+    cursor: pointer;
   }
 }

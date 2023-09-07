@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import EmailBox from "../EmailBox/EmailBox";
 import "./Footer.css";
 
@@ -11,11 +12,21 @@ const Footer = () => {
 
           <hr />
           <div className="f-menu">
-            <span>Home</span>
-            <span>What we do</span>
-            <span>How it works</span>
-            <span>Who we invest in</span>
-            <span>Testimonials</span>
+            <Link to="h-wrapper" spy smooth>
+              <span>Home</span>
+            </Link>
+            <Link to="wwd-wrapper" spy smooth>
+              <span>What we do</span>
+            </Link>
+            <Link to="hiw-wrapper" spy smooth offset={100}>
+              <span>How it works</span>
+            </Link>
+            <Link to="wwi-wrapper" spy smooth>
+              <span>Who we invest in</span>
+            </Link>
+            <Link to="t-wrapper" spy smooth offset={100}>
+              <span>Testimonials</span>
+            </Link>
           </div>
 
           <hr />

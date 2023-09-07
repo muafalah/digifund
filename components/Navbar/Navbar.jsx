@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { RxCross2 } from "react-icons/rx";
-import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { useMotionValueEvent, useScroll } from "framer-motion";
+import { Link } from "react-scroll";
 
 import "./Navbar.css";
 
@@ -32,12 +33,22 @@ const Navbar = () => {
           {/* Right Side */}
           <div className="n-right">
             <div className="n-menu">
-              <span>What we do</span>
-              <span>How it works</span>
-              <span>Who we invest in</span>
-              <span>Testimonials</span>
+              <Link to="wwd-wrapper" spy smooth>
+                <span>What we do</span>
+              </Link>
+              <Link to="hiw-wrapper" spy smooth offset={100}>
+                <span>How it works</span>
+              </Link>
+              <Link to="wwi-wrapper" spy smooth>
+                <span>Who we invest in</span>
+              </Link>
+              <Link to="t-wrapper" spy smooth offset={100}>
+                <span>Testimonials</span>
+              </Link>
             </div>
-            <div className="fund-button">Get Funded</div>
+            <Link to="f-wrapper" spy smooth>
+              <div className="fund-button">Get Funded</div>
+            </Link>
           </div>
         </div>
       </div>
@@ -67,11 +78,49 @@ const Navbar = () => {
           className="nm-menu"
           style={{ transform: mobileMenuOpened && "translateX(0%)" }}
         >
-          <span>What we do</span>
-          <span>How it works</span>
-          <span>Who we invest in</span>
-          <span>Testimonials</span>
-          <div className="m-funded-button">Get Funded</div>
+          <Link
+            to="wwd-wrapper"
+            spy
+            smooth
+            onClick={() => setMobileMenuOpened(false)}
+          >
+            <span>What we do</span>
+          </Link>
+          <Link
+            to="hiw-wrapper"
+            spy
+            smooth
+            offset={100}
+            onClick={() => setMobileMenuOpened(false)}
+          >
+            <span>How it works</span>
+          </Link>
+          <Link
+            to="wwi-wrapper"
+            spy
+            smooth
+            onClick={() => setMobileMenuOpened(false)}
+          >
+            <span>Who we invest in</span>
+          </Link>
+          <Link
+            to="t-wrapper"
+            spy
+            smooth
+            offset={100}
+            onClick={() => setMobileMenuOpened(false)}
+          >
+            <span>Testimonials</span>
+          </Link>
+          <Link
+            to="f-wrapper"
+            spy
+            smooth
+            offset={100}
+            onClick={() => setMobileMenuOpened(false)}
+          >
+            <div className="m-funded-button">Get Funded</div>
+          </Link>
         </div>
       </div>
     </div>
