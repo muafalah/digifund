@@ -62,17 +62,17 @@ export const ourDiffFeatures = [
   {
     icon: "/OurDiff/Frame-0.png",
     title: "Data Driven",
-    des: "Our mission is to level the playing field for early stage growth capital. We provide capital that is unbiased, flexible and non dilutive with the execution support to accelerate value creation",
+    des: "We provide capital that is unbiased, flexible and non dilutive with the execution support to accelerate value creation.",
   },
   {
     icon: "/OurDiff/Frame-1.png",
     title: "flexible funding",
-    des: "Funding that flexes as revenue grows with transparent costs and does not require dilution, personal guarantees or pitch decks",
+    des: "Funding that flexes as revenue grows with transparent costs and does not require dilution, personal guarantees or pitch decks.",
   },
   {
     icon: "/OurDiff/Frame-2.png",
     title: "value accelerating",
-    des: "On demand expertise to supercharge growth in areas that are hard to access for early stage founders",
+    des: "On demand expertise to supercharge growth in areas that are hard to access for early stage founders.",
   },
 ];
 
