@@ -30,7 +30,10 @@ const Footer = () => {
           </div>
 
           <hr />
-          <span className="copyright">Made with 💖 by M. Ifa Amrillah</span>
+          <span className="copyright">
+            Made with 💖 by{" "}
+            <a href={process.env.COPYRIGHT_URL}>M. Ifa Amrillah</a>
+          </span>
         </div>
       </div>
     </div>
