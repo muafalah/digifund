@@ -5,6 +5,13 @@
   z-index: 999;
 }
 
+.sticky {
+  position: fixed;
+  box-shadow: 10px 12px 48px rgba(181, 187, 203, 0.206);
+  background-color: white;
+  top: 0;
+}
+
 .n-container {
   padding: 1.5rem 1rem;
   color: white;
@@ -13,6 +20,11 @@
   align-items: center;
   justify-content: space-between;
   font-weight: 400;
+}
+
+.sticky .n-container {
+  color: var(--title-color);
+  padding: 1rem;
 }
 
 .n-logo {
